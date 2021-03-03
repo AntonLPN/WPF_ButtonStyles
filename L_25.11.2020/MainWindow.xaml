@@ -1,0 +1,42 @@
+﻿<Window x:Class="L_25._11._2020.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L_25._11._2020"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="292" Width="800">
+    <Window.Resources>
+        <Style x:Key="BigGrinBoldStyle">
+            <Setter Property="ItemsControl.Foreground" Value="Green"/>
+            <Setter Property="ItemsControl.FontSize" Value="25"/>
+            <Setter Property="ItemsControl.Width" Value="185"/>
+            <Setter Property="ItemsControl.FontWeight" Value="Bold"/>
+        </Style>
+        <Style x:Key="BigRedBoldStyle">
+            <Setter Property="ItemsControl.Foreground" Value="Red"/>
+            <Setter Property="ItemsControl.FontSize" Value="25"/>
+            <Setter Property="ItemsControl.Width" Value="185"/>
+            <Setter Property="ItemsControl.FontWeight" Value="Bold"/>
+        </Style>
+    </Window.Resources>
+    <Grid Margin="0,-23,0,-127" Height="288" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="ButtonBigGrin"  Style="{StaticResource ResourceKey=BigGrinBoldStyle}" Content="Big,green" Margin="155,31,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontWeight="Normal"/>
+        <Button x:Name="ButtonSmallGreen" Width="150" Style="{StaticResource ResourceKey=BigGrinBoldStyle}" Content="Samll,green" Margin="170,82,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontWeight="Normal" FontSize="12"/>
+        <Button x:Name="ButtonBigGreenBold" Style="{StaticResource ResourceKey=BigGrinBoldStyle}" Content="Big,green,bold" Margin="155,110,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <Button x:Name="SmallGreenBold"  Style="{StaticResource ResourceKey=BigGrinBoldStyle}" Content="Small,green bold" Margin="170,160,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="150" FontSize="12"/>
+
+
+        <Button Content="Big,red"  Style="{StaticResource ResourceKey=BigRedBoldStyle}" HorizontalAlignment="Left" Margin="129,31,0,0" VerticalAlignment="Top" Grid.Column="1" FontWeight="Normal"/>
+        <Button Content="Small,red" Width="150"  Style="{StaticResource ResourceKey=BigRedBoldStyle}" HorizontalAlignment="Left" Margin="149,82,0,0" VerticalAlignment="Top" Grid.Column="1" FontWeight="Normal" FontSize="12" />
+        <Button Content="Big,red,bold"   Style="{StaticResource ResourceKey=BigRedBoldStyle}" HorizontalAlignment="Left" Margin="129,110,0,0" VerticalAlignment="Top" Grid.Column="1" />
+        <Button Content="Small,red,bold"  Width="150" Style="{StaticResource ResourceKey=BigRedBoldStyle}" HorizontalAlignment="Left" Margin="149,160,0,0" VerticalAlignment="Top" Grid.Column="1" FontSize="12" />
+    
+
+
+    </Grid>
+</Window>
